@@ -20,7 +20,8 @@ CREATE TABLE band_params(
     UNIQUE      (bands_id, name) ON CONFLICT REPLACE
 );
 
-.import band_params.csv band_params
+-- set current freq for each band to start of the band
+insert into band_params select id, 'vfoa_freq', start_freq from bands;
 
 CREATE TABLE params(
     name        TEXT PRIMARY KEY ON CONFLICT REPLACE,
