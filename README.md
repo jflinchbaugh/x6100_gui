@@ -19,7 +19,9 @@ This is part of an alternative firmware for X6100 using the LVGL library
 5. Boot the radio to start the new firmware and have a new `DATA` partition created.
 6. Shutdown the radio.
 7. Insert the card back into your computer and open the new `DATA` partition.
-7. Restore copies of your `params.db` and other files you backed up to the `DATA`
+   (On Windows, you may need to open Disk Management and assign a drive letter
+   to the new `DATA` partition, if it doesn't automatically show up.)
+8. Restore copies of your `params.db` and other files you backed up to the `DATA`
    partition.
 
 ## Importing ADI log
